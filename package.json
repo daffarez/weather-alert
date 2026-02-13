@@ -6,7 +6,7 @@
   "scripts": {
     "producer": "node producer/producer.js",
     "consumer": "node consumer/consumer.js",
-    "dev": "concurrently \"npm run producer\" \"npm run consumer\""
+    "start": "concurrently \"npm run producer\" \"npm run consumer\""
   },
   "repository": {
     "type": "git",
