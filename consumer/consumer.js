@@ -1,4 +1,5 @@
 import { Kafka } from "kafkajs";
+import { isExtreme } from "./extreme.js";
 
 const kafka = new Kafka({
   clientId: "weather-alert-app",
@@ -6,15 +7,6 @@ const kafka = new Kafka({
 });
 
 const consumer = kafka.consumer({ groupId: "weather-alert-group" });
-
-const isExtreme = (weather) => {
-  return (
-    weather.temp > 32 ||
-    weather.temp < 18 ||
-    weather.humidity > 75 ||
-    weather.humidity < 30
-  );
-};
 
 const run = async () => {
   await consumer.connect();

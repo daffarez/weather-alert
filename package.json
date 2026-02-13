@@ -4,6 +4,8 @@
   "description": "Node.js mini-project: Weather data streaming and extreme condition detection",
   "main": "index.js",
   "scripts": {
+    "producer": "node producer/producer.js",
+    "consumer": "node consumer/consumer.js",
     "dev": "concurrently \"npm run producer\" \"npm run consumer\""
   },
   "repository": {
