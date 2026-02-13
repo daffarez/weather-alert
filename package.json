@@ -1,0 +1,28 @@
+{
+  "name": "weather-alert",
+  "version": "1.0.0",
+  "description": "Node.js mini-project: Weather data streaming and extreme condition detection",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run producer\" \"npm run consumer\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daffarez/weather-alert.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/daffarez/weather-alert/issues"
+  },
+  "homepage": "https://github.com/daffarez/weather-alert#readme",
+  "dependencies": {
+    "axios": "^1.13.5",
+    "kafkajs": "^2.2.4"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
